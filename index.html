@@ -8,6 +8,7 @@
 <link rel="canonical" href="https://ranjoooo.github.io/gleamo-cleaner/">
 <meta name="theme-color" content="#17795A">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon-512.png">
 
 <!-- Open Graph / social -->
 <meta property="og:type" content="website">
@@ -15,11 +16,13 @@
 <meta property="og:title" content="Gleamo — Free Phone Storage Cleaner (No Ads, No Internet Permission)">
 <meta property="og:description" content="Free Android cleaner that removes duplicate photos, WhatsApp media, large files and junk. No ads, no subscription, no internet permission — your files never leave your phone.">
 <meta property="og:url" content="https://ranjoooo.github.io/gleamo-cleaner/">
-<meta property="og:image" content="https://ranjoooo.github.io/gleamo-cleaner/og.svg">
+<meta property="og:image" content="https://ranjoooo.github.io/gleamo-cleaner/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Gleamo — Free Phone Storage Cleaner (No Ads, No Internet Permission)">
 <meta name="twitter:description" content="Free Android cleaner for duplicate photos, WhatsApp media, large files and junk. No ads, no subscription, no internet permission.">
-<meta name="twitter:image" content="https://ranjoooo.github.io/gleamo-cleaner/og.svg">
+<meta name="twitter:image" content="https://ranjoooo.github.io/gleamo-cleaner/og.png">
 
 <!-- Structured data: SoftwareApplication -->
 <script type="application/ld+json">
@@ -34,6 +37,14 @@
   "url": "https://ranjoooo.github.io/gleamo-cleaner/",
   "downloadUrl": "https://play.google.com/store/apps/details?id=app.gleamo.cleaner",
   "installUrl": "https://play.google.com/store/apps/details?id=app.gleamo.cleaner",
+  "image": "https://ranjoooo.github.io/gleamo-cleaner/icon-512.png",
+  "screenshot": [
+    "https://ranjoooo.github.io/gleamo-cleaner/shots/shot-1.png",
+    "https://ranjoooo.github.io/gleamo-cleaner/shots/shot-3.png",
+    "https://ranjoooo.github.io/gleamo-cleaner/shots/shot-2.png",
+    "https://ranjoooo.github.io/gleamo-cleaner/shots/shot-4.png"
+  ],
+  "softwareVersion": "1.0",
   "offers": {
     "@type": "Offer",
     "price": "0",
@@ -213,6 +224,14 @@
   .stats .s span{font-size:14px;opacity:.86;font-weight:600}
   @media(max-width:620px){.stats{grid-template-columns:repeat(2,1fr);gap:26px 18px}}
 
+  /* Screenshot strip */
+  .shots{display:flex;gap:20px;overflow-x:auto;padding:6px 2px 20px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+  .shots::-webkit-scrollbar{height:8px}
+  .shots::-webkit-scrollbar-thumb{background:var(--line);border-radius:999px}
+  .shot{flex:0 0 auto;width:238px;scroll-snap-align:center;border-radius:22px;overflow:hidden;box-shadow:0 10px 30px rgba(16,40,32,.14);border:1px solid var(--line);background:var(--green-d)}
+  .shot img{display:block;width:100%;height:auto}
+  @media(max-width:560px){.shot{width:210px}}
+
   /* Feature cards */
   .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
   .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px 24px;box-shadow:var(--shadow);transition:transform .14s, box-shadow .14s}
@@ -336,6 +355,22 @@
       <div class="s"><b>0</b><span>trackers / no internet</span></div>
       <div class="s"><b>9</b><span>cleanup tools</span></div>
       <div class="s"><b>Free</b><span>no in-app purchases</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="screens" style="padding-top:40px">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>See it in action</h2>
+      <p>Real screens from the app — scan, review what's filling your phone, and free the space.</p>
+    </div>
+    <div class="shots">
+      <div class="shot"><img src="shots/shot-1.png" width="560" height="996" alt="Gleamo home screen showing 5.9 GB free, a Scan my phone button, and badges for no ads, no subscription, and no internet permission" loading="lazy"></div>
+      <div class="shot"><img src="shots/shot-3.png" width="560" height="996" alt="Gleamo scan results showing 31 MB can be freed across duplicate files, similar photos, screenshots and large videos" loading="lazy"></div>
+      <div class="shot"><img src="shots/shot-2.png" width="560" height="996" alt="Gleamo similar photos screen grouping near-identical shots and keeping the best one" loading="lazy"></div>
+      <div class="shot"><img src="shots/shot-4.png" width="560" height="996" alt="Gleamo confirmation screen showing space freed instantly, files removed for real" loading="lazy"></div>
+      <div class="shot"><img src="shots/shot-5.png" width="560" height="996" alt="Gleamo home screen in Urdu, showing the app is localized and has no internet permission" loading="lazy"></div>
     </div>
   </div>
 </section>
