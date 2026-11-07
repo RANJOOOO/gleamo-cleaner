@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gleamo — Free Phone Storage Cleaner for Android (No Ads, No Internet Permission)</title>
+<meta name="description" content="Gleamo is a free, lightweight Android storage cleaner that finds duplicate photos, WhatsApp media, large files and junk so you can free up space. No ads, no subscription, and no internet permission — your photos and files never leave your phone.">
+<link rel="canonical" href="https://ranjoooo.github.io/gleamo/">
+<meta name="theme-color" content="#17795A">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+<!-- Open Graph / social -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Gleamo">
+<meta property="og:title" content="Gleamo — Free Phone Storage Cleaner (No Ads, No Internet Permission)">
+<meta property="og:description" content="Free Android cleaner that removes duplicate photos, WhatsApp media, large files and junk. No ads, no subscription, no internet permission — your files never leave your phone.">
+<meta property="og:url" content="https://ranjoooo.github.io/gleamo/">
+<meta property="og:image" content="https://ranjoooo.github.io/gleamo/og.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Gleamo — Free Phone Storage Cleaner (No Ads, No Internet Permission)">
+<meta name="twitter:description" content="Free Android cleaner for duplicate photos, WhatsApp media, large files and junk. No ads, no subscription, no internet permission.">
+<meta name="twitter:image" content="https://ranjoooo.github.io/gleamo/og.svg">
+
+<!-- Structured data: SoftwareApplication -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Gleamo",
+  "alternateName": "Phone Storage Cleaner - Gleamo",
+  "operatingSystem": "Android",
+  "applicationCategory": "UtilitiesApplication",
+  "description": "Gleamo is a free, lightweight Android storage cleaner that finds and removes duplicate photos, WhatsApp media, large files, and junk so you can free up space. It has no ads, no subscription, and no internet permission, so your photos and files never leave your phone.",
+  "url": "https://ranjoooo.github.io/gleamo/",
+  "downloadUrl": "https://play.google.com/store/apps/details?id=app.gleamo.cleaner",
+  "installUrl": "https://play.google.com/store/apps/details?id=app.gleamo.cleaner",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Codegram Studio"
+  },
+  "featureList": [
+    "Find and remove duplicate photos",
+    "Clean large photos and videos from the gallery",
+    "Clear WhatsApp media and forwarded files",
+    "Sort and delete the largest files",
+    "Find junk and clear recoverable cache",
+    "See a full storage overview"
+  ],
+  "permissions": "No internet permission. Gleamo works fully offline.",
+  "isAccessibleForFree": true
+}
+</script>
+
+<!-- Structured data: FAQ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I clear WhatsApp storage on Android?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "WhatsApp saves every forwarded image, meme, sticker and video to your phone, and it builds up fast. In Gleamo, open the WhatsApp media tool to see those files grouped together, review them, and delete the ones you no longer need. Because you confirm the deletion yourself, your saved chats and important media stay safe."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I find and delete duplicate photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Duplicate photos usually come from sharing, downloading the same image twice, or burst shots. Gleamo scans your gallery, groups duplicate and near-duplicate photos together, and lets you keep one copy and delete the rest in a couple of taps, so you recover space without losing the picture."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Gleamo really free? Are there ads or subscriptions?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Gleamo is free. There are no ads, no subscription, no paywall and no in-app purchases. Every cleaning tool is available to everyone at no cost. Many popular cleaner apps charge for the same features or fill the screen with ads; Gleamo does not."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Gleamo send my photos or data anywhere?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Gleamo does not request the internet permission at all, so the app physically cannot upload your photos, files or any data off your phone. Everything is scanned and cleaned locally on your device, which makes Gleamo private by design."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a good free cleaner app for Android without ads?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Gleamo is a free Android cleaner built around no ads, no subscription and no internet permission. It finds duplicate photos, WhatsApp media, large files and junk, shows a clear storage overview, and only deletes what you confirm. It is a good fit if you want to free up space without ads, trial billing, or your files leaving the phone."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Gleamo clear app cache?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Gleamo helps you clear recoverable junk and cache using Android's own storage tools. Note that since Android 6, apps are not allowed to silently wipe other apps' caches, so Gleamo is honest about what it can clear rather than promising to erase all cache. It focuses on the space it can genuinely free: duplicates, large files, WhatsApp media and accessible junk."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will Gleamo delete something I need?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No file is deleted automatically. Gleamo shows you what it found, you select what to remove, and you confirm before anything is deleted. This keeps you in control and prevents accidental loss of photos or files you want to keep."
+      }
+    }
+  ]
+}
+</script>
+
+<style>
+  :root{
+    --green:#17795A; --green-d:#0f5c44; --green-l:#1f9c74;
+    --mint:#CFF5E3; --mint-2:#eafaf2;
+    --ink:#0e241d; --body:#3a4b45; --muted:#6a7b74;
+    --bg:#ffffff; --bg-soft:#f4faf7; --line:#e4efe9;
+    --card:#ffffff; --radius:18px;
+    --shadow:0 1px 2px rgba(16,40,32,.05), 0 10px 30px rgba(16,40,32,.06);
+    --maxw:1080px;
+    --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:var(--font);color:var(--body);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased;font-size:17px}
+  h1,h2,h3{color:var(--ink);line-height:1.15;letter-spacing:-.02em;margin:0}
+  a{color:var(--green);text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+  .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+
+  /* Header */
+  header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.85);backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:66px}
+  .brand{display:flex;align-items:center;gap:11px;font-weight:800;color:var(--ink);font-size:19px;letter-spacing:-.01em}
+  .brand svg{width:34px;height:34px;border-radius:9px;display:block;box-shadow:0 2px 8px rgba(23,121,90,.3)}
+  .nav-cta{display:inline-flex;align-items:center;gap:8px;background:var(--green);color:#fff;font-weight:700;padding:10px 18px;border-radius:999px;font-size:15px;transition:background .15s}
+  .nav-cta:hover{background:var(--green-d)}
+  @media(max-width:560px){.nav-cta span{display:none}}
+
+  /* Hero */
+  .hero{padding:72px 0 48px;background:
+     radial-gradient(1200px 400px at 50% -140px, var(--mint-2), transparent 70%);}
+  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;font-weight:700;color:var(--green);background:var(--mint);padding:6px 13px;border-radius:999px;font-size:13.5px;letter-spacing:.01em}
+  h1{font-size:clamp(32px,5vw,52px);font-weight:850;margin:18px 0 0}
+  .lede{font-size:clamp(17px,2.2vw,20px);margin:20px 0 0;max-width:38ch;color:var(--body)}
+  .cta-row{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-top:30px}
+  .btn-play{display:inline-flex;align-items:center;gap:12px;background:var(--ink);color:#fff;padding:13px 22px 13px 20px;border-radius:14px;font-weight:700;transition:transform .12s, box-shadow .12s;box-shadow:var(--shadow)}
+  .btn-play:hover{transform:translateY(-2px)}
+  .btn-play svg{width:26px;height:26px}
+  .btn-play .small{font-size:11px;font-weight:600;opacity:.8;display:block;line-height:1}
+  .btn-play .big{font-size:18px;font-weight:800;line-height:1.25}
+  .chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:26px}
+  .chip{font-size:13.5px;font-weight:650;color:var(--green-d);background:var(--bg-soft);border:1px solid var(--line);padding:7px 13px;border-radius:999px}
+  .chip b{color:var(--green)}
+
+  /* Phone mock */
+  .phone{justify-self:center;width:260px;aspect-ratio:9/19;border-radius:38px;background:linear-gradient(170deg,var(--green),var(--green-d));padding:12px;box-shadow:0 30px 60px -20px rgba(15,92,68,.55), inset 0 0 0 2px rgba(255,255,255,.08);position:relative}
+  .screen{width:100%;height:100%;background:#fff;border-radius:28px;overflow:hidden;display:flex;flex-direction:column}
+  .screen-top{padding:22px 18px 16px;background:linear-gradient(180deg,var(--mint-2),#fff)}
+  .ring{width:118px;height:118px;border-radius:50%;margin:4px auto 0;display:grid;place-items:center;background:conic-gradient(var(--green) 0 62%, #e6f2ec 62% 100%);position:relative}
+  .ring::after{content:"";position:absolute;inset:11px;background:#fff;border-radius:50%}
+  .ring .num{position:relative;z-index:1;text-align:center}
+  .ring .num b{display:block;font-size:26px;color:var(--ink);font-weight:850;letter-spacing:-.02em}
+  .ring .num span{font-size:11px;color:var(--muted);font-weight:600}
+  .screen-list{padding:14px 16px;display:flex;flex-direction:column;gap:9px}
+  .row{display:flex;align-items:center;gap:11px;font-size:12.5px;color:var(--ink);font-weight:600}
+  .row i{width:30px;height:30px;border-radius:9px;background:var(--mint);display:grid;place-items:center;flex:none;color:var(--green);font-style:normal;font-size:14px}
+  .row .mb{margin-left:auto;color:var(--muted);font-weight:700;font-size:11.5px}
+
+  /* Section shells */
+  section{padding:64px 0}
+  .sec-head{text-align:center;max-width:620px;margin:0 auto 42px}
+  .sec-head h2{font-size:clamp(26px,3.6vw,38px);font-weight:850}
+  .sec-head p{margin:14px 0 0;color:var(--muted);font-size:18px}
+
+  /* Stats */
+  .stats{background:var(--green);color:#fff;border-radius:24px;padding:34px 24px;display:grid;grid-template-columns:repeat(4,1fr);gap:18px;text-align:center}
+  .stats .s b{display:block;font-size:clamp(26px,4vw,38px);font-weight:850;letter-spacing:-.02em}
+  .stats .s span{font-size:14px;opacity:.86;font-weight:600}
+  @media(max-width:620px){.stats{grid-template-columns:repeat(2,1fr);gap:26px 18px}}
+
+  /* Feature cards */
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px 24px;box-shadow:var(--shadow);transition:transform .14s, box-shadow .14s}
+  .card:hover{transform:translateY(-3px);box-shadow:0 2px 4px rgba(16,40,32,.06),0 18px 40px rgba(16,40,32,.09)}
+  .card .ic{width:46px;height:46px;border-radius:12px;background:var(--mint);display:grid;place-items:center;color:var(--green-d);margin-bottom:16px}
+  .card .ic svg{width:24px;height:24px}
+  .card h3{font-size:19px;font-weight:800;margin-bottom:8px}
+  .card p{margin:0;color:var(--muted);font-size:15.5px}
+
+  /* Why / reasons */
+  .why{background:var(--bg-soft)}
+  .reasons{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+  .reason{display:flex;gap:16px;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
+  .reason .tick{flex:none;width:38px;height:38px;border-radius:50%;background:var(--green);color:#fff;display:grid;place-items:center;font-weight:800}
+  .reason h3{font-size:18px;font-weight:800;margin-bottom:5px}
+  .reason p{margin:0;color:var(--muted);font-size:15px}
+
+  /* FAQ */
+  .faq{max-width:780px;margin:0 auto}
+  details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:4px 20px;margin-bottom:12px;box-shadow:var(--shadow)}
+  details summary{cursor:pointer;list-style:none;font-weight:750;color:var(--ink);font-size:17px;padding:16px 28px 16px 0;position:relative}
+  details summary::-webkit-details-marker{display:none}
+  details summary::after{content:"+";position:absolute;right:2px;top:14px;font-size:22px;color:var(--green);font-weight:400;transition:transform .2s}
+  details[open] summary::after{transform:rotate(45deg)}
+  details p{margin:0 0 18px;color:var(--body);font-size:15.5px}
+
+  /* Final CTA */
+  .final{text-align:center;background:linear-gradient(165deg,var(--green),var(--green-d));color:#fff;border-radius:28px;padding:56px 24px}
+  .final h2{color:#fff;font-size:clamp(26px,4vw,40px);font-weight:850}
+  .final p{max-width:46ch;margin:16px auto 0;opacity:.9;font-size:18px}
+  .final .btn-play{background:#fff;color:var(--ink);margin-top:30px}
+
+  footer{padding:46px 0 60px;border-top:1px solid var(--line);color:var(--muted);font-size:14.5px}
+  .foot{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between}
+  .foot a{color:var(--green);font-weight:650}
+  .foot .links{display:flex;gap:20px;flex-wrap:wrap}
+
+  @media(max-width:860px){
+    .hero-grid{grid-template-columns:1fr;gap:40px}
+    .lede{max-width:none}
+    .cards{grid-template-columns:1fr 1fr}
+    .reasons{grid-template-columns:1fr}
+    .phone{order:-1}
+  }
+  @media(max-width:560px){
+    .cards{grid-template-columns:1fr}
+    section{padding:52px 0}
+  }
+</style>
+</head>
+<body>
+
+<!-- Reusable play icon + logo defs -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="glogo" viewBox="0 0 108 108">
+      <rect width="108" height="108" rx="26" fill="#17795A"/>
+      <path fill="#FFFFFF" d="M50,30 C52,46 57,51 72,53 C57,55 52,60 50,76 C48,60 43,55 28,53 C43,51 48,46 50,30 Z"/>
+      <path fill="#CFF5E3" d="M69,32 C70,38 72,40 78,41 C72,42 70,44 69,50 C68,44 66,42 60,41 C66,40 68,38 69,32 Z"/>
+    </symbol>
+    <symbol id="gplay" viewBox="0 0 24 24">
+      <path fill="#00E0FF" d="M3.6 2.3 13 12 3.6 21.7a1.6 1.6 0 0 1-.6-1.3V3.6c0-.5.2-1 .6-1.3z"/>
+      <path fill="#00F076" d="M3.6 2.3c.3-.2.8-.3 1.3 0L16.5 9 13 12 3.6 2.3z"/>
+      <path fill="#FF3A44" d="M16.5 9l4 2.3c.9.5.9 1.9 0 2.4l-4 2.3L13 12l3.5-3z"/>
+      <path fill="#FFC500" d="M3.6 21.7 13 12l3.5 3-11.6 6.7c-.5.3-1 .2-1.3 0z"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="/gleamo/"><svg><use href="#glogo"/></svg>Gleamo</a>
+    <a class="nav-cta" href="https://play.google.com/store/apps/details?id=app.gleamo.cleaner" rel="noopener">
+      <svg width="18" height="18"><use href="#gplay"/></svg><span>Get it on Google Play</span>
+    </a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow"><svg width="15" height="15"><use href="#glogo"/></svg> Free Android storage cleaner</span>
+      <h1>Free up phone storage without ads — and without your photos ever leaving your phone</h1>
+      <p class="lede">Gleamo finds and removes duplicate photos, WhatsApp media, large files and junk so you get space back. It has <strong>no internet permission at all</strong>, so nothing it scans can be uploaded anywhere.</p>
+      <div class="cta-row">
+        <a class="btn-play" href="https://play.google.com/store/apps/details?id=app.gleamo.cleaner" rel="noopener">
+          <svg><use href="#gplay"/></svg>
+          <span><span class="small">GET IT ON</span><span class="big">Google Play</span></span>
+        </a>
+      </div>
+      <div class="chips">
+        <span class="chip"><b>0</b> ads</span>
+        <span class="chip"><b>0</b> subscriptions</span>
+        <span class="chip">No internet permission</span>
+        <span class="chip">Lightweight</span>
+      </div>
+    </div>
+
+    <div class="phone" aria-hidden="true">
+      <div class="screen">
+        <div class="screen-top">
+          <div class="ring"><div class="num"><b>62%</b><span>space used</span></div></div>
+        </div>
+        <div class="screen-list">
+          <div class="row"><i>❏</i> Duplicate photos <span class="mb">1.2 GB</span></div>
+          <div class="row"><i>▶</i> Large videos <span class="mb">940 MB</span></div>
+          <div class="row"><i>✦</i> WhatsApp media <span class="mb">610 MB</span></div>
+          <div class="row"><i>≡</i> Large files <span class="mb">480 MB</span></div>
+          <div class="row"><i>⌫</i> Junk &amp; cache <span class="mb">230 MB</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:8px">
+  <div class="wrap">
+    <div class="stats">
+      <div class="s"><b>0</b><span>ads, ever</span></div>
+      <div class="s"><b>0</b><span>trackers / no internet</span></div>
+      <div class="s"><b>6</b><span>cleanup tools</span></div>
+      <div class="s"><b>Free</b><span>no in-app purchases</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="features">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>What Gleamo cleans</h2>
+      <p>Six focused tools that find the space you can actually get back.</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="7" y="7" width="12" height="12" rx="2"/><path d="M4 16V5a2 2 0 0 1 2-2h11"/></svg></div>
+        <h3>Duplicate photos</h3>
+        <p>Finds exact and near-duplicate copies, so you keep one and delete the rest in a couple of taps.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="m10 9 5 3-5 3z" fill="currentColor"/></svg></div>
+        <h3>Gallery &amp; videos</h3>
+        <p>Review your largest photos and videos and clear the ones you no longer need from the gallery.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.5 8.5 0 0 1-12.3 7.6L3 21l1.9-5.7A8.5 8.5 0 1 1 21 11.5z"/></svg></div>
+        <h3>WhatsApp media</h3>
+        <p>Clears the forwarded images, memes, stickers and videos WhatsApp quietly piles up in your storage.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h10M4 18h6"/></svg></div>
+        <h3>Large files</h3>
+        <p>Sorts your biggest files by size, so you free the most space with the fewest deletions.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18l-1.5 14a2 2 0 0 1-2 1.8H6.5a2 2 0 0 1-2-1.8L3 6z"/><path d="M9 6V4h6v2"/></svg></div>
+        <h3>Junk &amp; cache</h3>
+        <p>Finds app leftovers and uses Android's own storage tools to clear recoverable space — honestly, no fake numbers.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 12 12 4a8 8 0 0 1 7 4z" fill="currentColor"/></svg></div>
+        <h3>Storage overview</h3>
+        <p>Shows what's actually using your space — photos, videos, apps — at a glance, so you know where to start.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Why people choose Gleamo</h2>
+      <p>The best cleaner features that other apps charge for — free, and private by design.</p>
+    </div>
+    <div class="reasons">
+      <div class="reason"><div class="tick">✓</div><div><h3>No ads</h3><p>Most popular cleaner apps are packed with full-screen ads. Gleamo shows none — ever.</p></div></div>
+      <div class="reason"><div class="tick">✓</div><div><h3>No subscription, no paywall</h3><p>Every tool is free. No three-day trial that bills you, no locked features, no in-app purchases.</p></div></div>
+      <div class="reason"><div class="tick">✓</div><div><h3>Offline &amp; private</h3><p>Gleamo has no internet permission at all, so your photos and files physically cannot leave your phone.</p></div></div>
+      <div class="reason"><div class="tick">✓</div><div><h3>Lightweight</h3><p>A small download that opens fast and stays light on your battery and memory.</p></div></div>
+      <div class="reason"><div class="tick">✓</div><div><h3>Honest results</h3><p>Gleamo only deletes what you confirm, and only claims the space it can genuinely free.</p></div></div>
+      <div class="reason"><div class="tick">✓</div><div><h3>You stay in control</h3><p>Nothing is removed automatically. You review what was found and decide what to delete.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Frequently asked questions</h2>
+      <p>Clearing WhatsApp storage, finding duplicate photos, and how Gleamo keeps your data private.</p>
+    </div>
+    <div class="faq">
+      <details open>
+        <summary>How do I clear WhatsApp storage on Android?</summary>
+        <p>WhatsApp saves every forwarded image, meme, sticker and video to your phone, and it builds up fast. In Gleamo, open the WhatsApp media tool to see those files grouped together, review them, and delete the ones you no longer need. Because you confirm the deletion yourself, your saved chats and important media stay safe.</p>
+      </details>
+      <details>
+        <summary>How do I find and delete duplicate photos?</summary>
+        <p>Duplicate photos usually come from sharing, downloading the same image twice, or burst shots. Gleamo scans your gallery, groups duplicate and near-duplicate photos together, and lets you keep one copy and delete the rest in a couple of taps — so you recover space without losing the picture.</p>
+      </details>
+      <details>
+        <summary>Is Gleamo really free? Are there ads or subscriptions?</summary>
+        <p>Yes. Gleamo is free with no ads, no subscription, no paywall and no in-app purchases. Every cleaning tool is available to everyone at no cost. Many popular cleaner apps charge for the same features or fill the screen with ads; Gleamo does not.</p>
+      </details>
+      <details>
+        <summary>Does Gleamo send my photos or data anywhere?</summary>
+        <p>No. Gleamo does not request the internet permission at all, so the app physically cannot upload your photos, files or any data off your phone. Everything is scanned and cleaned locally on your device, which makes Gleamo private by design.</p>
+      </details>
+      <details>
+        <summary>What is a good free cleaner app for Android without ads?</summary>
+        <p>Gleamo is a free Android cleaner built around no ads, no subscription and no internet permission. It finds duplicate photos, WhatsApp media, large files and junk, shows a clear storage overview, and only deletes what you confirm. It is a good fit if you want to free up space without ads, trial billing, or your files leaving the phone.</p>
+      </details>
+      <details>
+        <summary>Does Gleamo clear app cache?</summary>
+        <p>Gleamo helps you clear recoverable junk and cache using Android's own storage tools. Since Android 6, apps are not allowed to silently wipe other apps' caches, so Gleamo is honest about what it can clear rather than promising to erase all cache. It focuses on the space it can genuinely free: duplicates, large files, WhatsApp media and accessible junk.</p>
+      </details>
+      <details>
+        <summary>Will Gleamo delete something I need?</summary>
+        <p>No file is deleted automatically. Gleamo shows you what it found, you select what to remove, and you confirm before anything is deleted. This keeps you in control and prevents accidental loss of photos or files you want to keep.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="final">
+      <h2>Get your storage back — free</h2>
+      <p>Duplicate photos, WhatsApp clutter, large files and junk, cleared on your terms. No ads, no subscription, no internet permission.</p>
+      <a class="btn-play" href="https://play.google.com/store/apps/details?id=app.gleamo.cleaner" rel="noopener">
+        <svg><use href="#gplay"/></svg>
+        <span><span class="small">GET IT ON</span><span class="big">Google Play</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div class="brand" style="font-size:16px"><svg style="width:26px;height:26px"><use href="#glogo"/></svg>Gleamo</div>
+    <div class="links">
+      <a href="#features">Features</a>
+      <a href="#faq">FAQ</a>
+      <a href="https://play.google.com/store/apps/details?id=app.gleamo.cleaner" rel="noopener">Google Play</a>
+    </div>
+    <div style="width:100%;margin-top:6px;color:var(--muted)">Gleamo — a free phone storage cleaner for Android by Codegram Studio. Your files never leave your phone.</div>
+  </div>
+</footer>
+
+</body>
+</html>
