@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ranjoooo.github.io/gleamo/sitemap.xml
+Sitemap: https://ranjoooo.github.io/gleamo-cleaner/sitemap.xml

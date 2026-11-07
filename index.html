@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Gleamo — Free Phone Storage Cleaner for Android (No Ads, No Internet Permission)</title>
 <meta name="description" content="Gleamo is a free, lightweight Android storage cleaner that finds duplicate photos, WhatsApp media, large files and junk so you can free up space. No ads, no subscription, and no internet permission — your photos and files never leave your phone.">
-<link rel="canonical" href="https://ranjoooo.github.io/gleamo/">
+<link rel="canonical" href="https://ranjoooo.github.io/gleamo-cleaner/">
 <meta name="theme-color" content="#17795A">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 
@@ -14,12 +14,12 @@
 <meta property="og:site_name" content="Gleamo">
 <meta property="og:title" content="Gleamo — Free Phone Storage Cleaner (No Ads, No Internet Permission)">
 <meta property="og:description" content="Free Android cleaner that removes duplicate photos, WhatsApp media, large files and junk. No ads, no subscription, no internet permission — your files never leave your phone.">
-<meta property="og:url" content="https://ranjoooo.github.io/gleamo/">
-<meta property="og:image" content="https://ranjoooo.github.io/gleamo/og.svg">
+<meta property="og:url" content="https://ranjoooo.github.io/gleamo-cleaner/">
+<meta property="og:image" content="https://ranjoooo.github.io/gleamo-cleaner/og.svg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Gleamo — Free Phone Storage Cleaner (No Ads, No Internet Permission)">
 <meta name="twitter:description" content="Free Android cleaner for duplicate photos, WhatsApp media, large files and junk. No ads, no subscription, no internet permission.">
-<meta name="twitter:image" content="https://ranjoooo.github.io/gleamo/og.svg">
+<meta name="twitter:image" content="https://ranjoooo.github.io/gleamo-cleaner/og.svg">
 
 <!-- Structured data: SoftwareApplication -->
 <script type="application/ld+json">
@@ -30,8 +30,8 @@
   "alternateName": "Phone Storage Cleaner - Gleamo",
   "operatingSystem": "Android",
   "applicationCategory": "UtilitiesApplication",
-  "description": "Gleamo is a free, lightweight Android storage cleaner that finds and removes duplicate photos, WhatsApp media, large files, and junk so you can free up space. It has no ads, no subscription, and no internet permission, so your photos and files never leave your phone.",
-  "url": "https://ranjoooo.github.io/gleamo/",
+  "description": "Gleamo is a free, lightweight Android storage cleaner that finds and removes duplicate photos, WhatsApp media, large files, and junk so you can free up space. It also compresses videos, merges duplicate contacts, and hides private photos in a screen-lock vault. It has no ads, no subscription, and no internet permission, so your photos and files never leave your phone.",
+  "url": "https://ranjoooo.github.io/gleamo-cleaner/",
   "downloadUrl": "https://play.google.com/store/apps/details?id=app.gleamo.cleaner",
   "installUrl": "https://play.google.com/store/apps/details?id=app.gleamo.cleaner",
   "offers": {
@@ -49,7 +49,11 @@
     "Clear WhatsApp media and forwarded files",
     "Sort and delete the largest files",
     "Find junk and clear recoverable cache",
-    "See a full storage overview"
+    "See a full storage overview",
+    "Compress videos to save space",
+    "Merge duplicate contacts",
+    "Hide private photos in a screen-lock vault (Secret Space)",
+    "On-device AI to find blurry photos, screenshots and the best of similar shots"
   ],
   "permissions": "No internet permission. Gleamo works fully offline.",
   "isAccessibleForFree": true
@@ -116,6 +120,22 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "No file is deleted automatically. Gleamo shows you what it found, you select what to remove, and you confirm before anything is deleted. This keeps you in control and prevents accidental loss of photos or files you want to keep."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can Gleamo hide private photos and videos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Secret Space is a private vault inside Gleamo where you can move photos and videos so other apps cannot see them. It is locked by your phone's own screen lock — PIN, pattern, password or fingerprint — and Gleamo never sees or stores your lock. The files stay on your device and are not uploaded anywhere."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can Gleamo compress videos to save space?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Gleamo can compress large videos into smaller copies saved to your gallery, so you keep the memory while using far less storage. The original video is only removed if you confirm it."
       }
     }
   ]
@@ -264,7 +284,7 @@
 
 <header>
   <div class="wrap nav">
-    <a class="brand" href="/gleamo/"><svg><use href="#glogo"/></svg>Gleamo</a>
+    <a class="brand" href="/gleamo-cleaner/"><svg><use href="#glogo"/></svg>Gleamo</a>
     <a class="nav-cta" href="https://play.google.com/store/apps/details?id=app.gleamo.cleaner" rel="noopener">
       <svg width="18" height="18"><use href="#gplay"/></svg><span>Get it on Google Play</span>
     </a>
@@ -314,7 +334,7 @@
     <div class="stats">
       <div class="s"><b>0</b><span>ads, ever</span></div>
       <div class="s"><b>0</b><span>trackers / no internet</span></div>
-      <div class="s"><b>6</b><span>cleanup tools</span></div>
+      <div class="s"><b>9</b><span>cleanup tools</span></div>
       <div class="s"><b>Free</b><span>no in-app purchases</span></div>
     </div>
   </div>
@@ -324,7 +344,7 @@
   <div class="wrap">
     <div class="sec-head">
       <h2>What Gleamo cleans</h2>
-      <p>Six focused tools that find the space you can actually get back.</p>
+      <p>Focused tools that find the space you can actually get back — plus a few extras most cleaners charge for.</p>
     </div>
     <div class="cards">
       <div class="card">
@@ -356,6 +376,21 @@
         <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 12 12 4a8 8 0 0 1 7 4z" fill="currentColor"/></svg></div>
         <h3>Storage overview</h3>
         <p>Shows what's actually using your space — photos, videos, apps — at a glance, so you know where to start.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="13" height="14" rx="2"/><path d="m16 10 5-3v10l-5-3z" fill="currentColor"/></svg></div>
+        <h3>Video compressor</h3>
+        <p>Shrinks large videos into smaller copies so you keep the memory while using far less storage.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div>
+        <h3>Secret Space</h3>
+        <p>Hide private photos and videos behind your phone's own screen lock. They stay on your device, never uploaded.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 20a5.5 5.5 0 0 1 11 0"/><path d="M16 11h5M18.5 8.5v5"/></svg></div>
+        <h3>Duplicate contacts</h3>
+        <p>Finds contacts saved more than once and merges them with Android's own linking — nothing leaves your phone.</p>
       </div>
     </div>
   </div>
@@ -408,6 +443,14 @@
       <details>
         <summary>Does Gleamo clear app cache?</summary>
         <p>Gleamo helps you clear recoverable junk and cache using Android's own storage tools. Since Android 6, apps are not allowed to silently wipe other apps' caches, so Gleamo is honest about what it can clear rather than promising to erase all cache. It focuses on the space it can genuinely free: duplicates, large files, WhatsApp media and accessible junk.</p>
+      </details>
+      <details>
+        <summary>Can Gleamo hide private photos and videos?</summary>
+        <p>Yes. Secret Space is a private vault inside Gleamo where you move photos and videos so other apps cannot see them. It is locked by your phone's own screen lock — PIN, pattern, password or fingerprint — and Gleamo never sees or stores your lock. The files stay on your device and are not uploaded anywhere.</p>
+      </details>
+      <details>
+        <summary>Can Gleamo compress videos to save space?</summary>
+        <p>Yes. Gleamo can compress large videos into smaller copies saved to your gallery, so you keep the memory while using far less storage. The original is only removed if you confirm it.</p>
       </details>
       <details>
         <summary>Will Gleamo delete something I need?</summary>
